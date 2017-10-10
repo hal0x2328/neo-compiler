@@ -326,9 +326,10 @@ namespace Neo.Compiler.MSIL
                     //}
                     //else
                     {
+                        var addr = 0;
                         try
                         {
-                            var addr = addrconv[c.srcaddr];
+                            addr = addrconv[c.srcaddr];
                         }
                         catch
                         {
